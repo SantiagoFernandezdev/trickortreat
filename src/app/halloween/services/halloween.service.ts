@@ -77,7 +77,7 @@ export class HalloweenService {
 
         console.log(this.intro, 'intro')
 
-        this.intro = new Audio('/intro.mp3')
+        this.intro = new Audio('intro.mp3')
             this.intro.play()
 
         
