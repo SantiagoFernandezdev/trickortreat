@@ -8,9 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:href": "ng build --base-href ./",
-    "build:github": "npm run build:href && npm run delete:docs && npm run copy:docs",
+    "build:github": "npm run build:href && npm run delete:docs && mkdir docs && npm run copy:docs",
     "delete:docs": "del-cli docs",
-    "copy:docs": "copyfiles dist/bases/browser/* ./docs -f"
+    "copy:docs": "copyfiles dist/bases/browser/*  ./docs -f"
   },
   "private": true,
   "dependencies": {
@@ -41,6 +41,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "mkdirp": "^3.0.1",
     "typescript": "~5.5.2"
   }
 }
