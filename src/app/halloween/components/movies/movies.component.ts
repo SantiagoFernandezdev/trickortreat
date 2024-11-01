@@ -79,7 +79,7 @@ export class MoviesComponent implements OnInit {
     } else {
       this.user!.moviesErr += 1;
       this.user!.lives -= 1
-      this.soundRisa = new Audio('/risa2.mp3')
+      this.soundRisa = new Audio('risa2.mp3')
       this.soundRisa.play()
       this.resetLives()
     }
@@ -168,7 +168,7 @@ export class MoviesComponent implements OnInit {
         if (this.countRegresive >= 0 && this.countRegresive <= 10) {
 
           if (!this.soundTicTac) {
-            this.soundTicTac = new Audio('/tic-tac.mp3')
+            this.soundTicTac = new Audio('tic-tac.mp3')
             this.soundTicTac.play()
           }
          
