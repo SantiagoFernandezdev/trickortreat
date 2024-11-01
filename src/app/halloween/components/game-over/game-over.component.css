@@ -1,0 +1,23 @@
+
+.title {
+    text-align: center;
+
+    h3 {
+        font-size: 42px;
+    }
+}
+
+.main {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    app-table {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}

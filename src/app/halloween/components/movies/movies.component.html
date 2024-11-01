@@ -1,0 +1,81 @@
+<div class="box">
+
+   
+
+    <div class="bannerLeft">
+        <div class="lives">
+            <div class="livs">
+               <div *ngFor="let liv of livs" class="liv">
+                🎃
+               </div>
+            </div>
+    
+            <div class="bar">
+                <div class="" [style]="'width: ' + this.progress + '%; border-radius: 20px; background-color: orange; height: 100%;'">
+    
+                </div>
+            </div>
+        </div>
+
+     
+      
+    </div>
+
+
+   <div class="main">
+        <div  *ngIf="!isClick"  class="screen animate__animated animate__fadeIn">
+            <div class="picture">
+                <img [src]="movie?.picture" alt="">
+            </div>
+            <div class="content">
+               
+        
+                <div class="description">
+                    <p>
+                        {{movie?.description}}
+                    </p>
+                </div>
+            </div>
+        
+            <div class="title"><h3>guess the movie</h3></div>
+        
+            <div class="options">
+                <app-button-option *ngFor="let option of movie?.options" [option]="option" (chooseMovie)="chooseMovie($event, movie)"></app-button-option>
+            </div>
+        </div>
+
+        <div  *ngIf="isClick" class="success animate__animated animate__zoomIn">
+
+            <div class="img">
+                <img *ngIf="isSelectChoise" src="/great.gif" alt="">
+
+                <img *ngIf="!isSelectChoise" src="/bad.gif" alt="">
+            </div>
+
+            <h3 *ngIf="isSelectChoise" >great job!</h3>
+            <h3 *ngIf="!isSelectChoise" >bad choice
+            </h3>
+
+            <div class="count">
+               <h3> {{count }}</h3>
+            </div>
+
+        </div>
+   </div>
+
+   <div class="points">
+    <div class="rounds">
+        <h3>Round {{currentRound}} / {{rounds}}</h3>
+
+        <div class="space"></div>
+
+        <div class="time">
+           <div class="tit"> <h4>Time</h4>  <h3> {{ countRegresive }}</h3></div>
+           
+        </div>
+    </div>
+    <div class="number">
+        <h3>{{user!.points}} Pts</h3>
+    </div>
+   </div>
+</div>

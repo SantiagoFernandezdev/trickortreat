@@ -1,0 +1,63 @@
+
+.main {
+   
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('../../../../../public/halloween.jpg');
+    background-size: cover;
+    background-position: top;
+
+   
+    overflow-y: scroll;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+
+
+
+    .header {
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        padding: 10px;
+        background-color: rgba(0,0,0,0.1);
+    }
+
+    .content {
+        width: 100%;
+        height: calc(100vh - 100px);
+        margin-top: 80px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        app-movies {
+            width: 90%;
+            height: 100%;
+        }
+
+        app-game-over {
+            width: 70%;
+            height: 100%;
+        }
+    }
+    
+}
+
+.href {
+    margin-top: 20px;
+    color: #dadada;
+
+    text-decoration: none;
+}
+
+
+
+

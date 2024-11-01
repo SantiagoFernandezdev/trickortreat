@@ -1,0 +1,47 @@
+<div class="main">
+    <table [cellPadding]="0" [cellSpacing]="0">
+
+        <tr class="title">
+            <td style="width: 50px;">Pto.</td>
+            <td>User</td>
+            <td style="width: 50px;">Lives</td>
+            <td style="width: 120px;">Movies Know</td>
+            <td style="width: 130px;">Movies unKnow</td>
+            <td style="width: 130px;">Duration session</td>
+            <td style="width: 80px;">Points</td>
+        </tr>
+   
+    </table>
+
+    </div>
+
+   
+    <div class="table">
+        <table [cellPadding]="0" [cellSpacing]="0">
+
+     
+    
+            <tr [ngClass]="{'user': true, 'select': (session && user.name == session!.name)}" *ngFor="let user of tableUsers; let i = index">
+                <td style="width: 50px;">
+                    <div class="position">
+                        <div class="qalification"
+                        
+                        [ngClass]="{'one': i == 0, 'two': i == 1, 'three': i == 2}"
+                        
+                        >   <span>{{ ( i + 1 )}}</span></div>
+                     
+
+                    </div>
+                </td>
+                <td [noWrap]="true"><span>{{ user.name }}</span></td>
+    
+                <td style="width: 50px;"><span>{{ user.lives }}</span></td>
+                <td style="width: 120px;"><span>{{ user.moviesOK }}</span></td>
+                <td style="width: 130px;"><span>{{ user.moviesErr }}</span></td>
+                <td style="width: 130px;"><span>{{ user.duration }} sec.</span></td>
+                <td style="width: 80px;"><span>{{ user.points }} pts</span></td>
+               
+            </tr>
+        </table>
+
+</div>

@@ -1,0 +1,25 @@
+
+<div class="main">
+  
+
+    <div class="content">
+
+        <app-board class="animate__animated animate__fadeIn" *ngIf="loadScreen == Screen.WELCOME"></app-board>
+
+        
+        <app-play *ngIf="loadScreen == Screen.WELCOME" (userEvent)="startGame($event)"></app-play>
+
+
+        <app-movies class="animate__animated animate__zoomIn" *ngIf="loadScreen == Screen.MOVIES" (gameOver)="gameOver($event)"></app-movies>
+
+        <app-game-over class="animate__animated animate__zoomIn" *ngIf="loadScreen == Screen.GAMEOVER" (again)="againGame($event)"></app-game-over>
+
+        <a *ngIf="loadScreen == Screen.WELCOME" (click)="changeMode()" class="href" href="#">Magic Board</a>
+
+    </div>
+</div>
+
+<div class="filter">
+
+</div>
+

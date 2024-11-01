@@ -1,0 +1,138 @@
+.table td {
+    
+}
+
+.title {
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.qalification {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    background-color: rgb(122, 122, 0);
+}
+
+.two {
+    background-color: rgb(88, 88, 82);
+}
+
+.three {
+    background-color: rgb(107, 66, 5);
+}
+
+
+.main {
+    width: 100%;
+ 
+  overflow-y: scroll;
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        font-family: sans-serif;
+        padding: 10px;
+    }
+
+
+}
+
+
+.table {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        font-family: sans-serif;
+        padding: 10px;
+    }
+
+   
+    .user{
+       
+        
+        background-color: rgba(41, 1, 1, 0.9);
+        color: #fff;
+        font-size: 14px;
+        border-bottom: 1px solid orangered;
+
+        
+        td {
+            text-align: center;
+        }
+
+        span {
+            font-family: sans-serif;
+            opacity: .7;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+.select {
+    background-color: rgba(75, 2, 2, 0.9) !important;
+}
+
+
+.table::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .table::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: rgb(176, 4, 4); 
+  }
+  
+  .table::-webkit-scrollbar-button,
+  .table::-webkit-scrollbar-track,
+  .table::-webkit-scrollbar-track-piece,
+  .table::-webkit-scrollbar-corner,
+  .table::-webkit-resizer {
+    display: none;
+  }
+
+
+  
+
+.main::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .main::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: rgb(176, 4, 4); 
+  }
+  
+  .main::-webkit-scrollbar-button,
+  .main::-webkit-scrollbar-track,
+  .main::-webkit-scrollbar-track-piece,
+  .main::-webkit-scrollbar-corner,
+  .main::-webkit-resizer {
+    display: none;
+  }
